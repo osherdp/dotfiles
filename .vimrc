@@ -77,7 +77,6 @@ map <F6> :let &background=(&background=="dark"?"light":"dark")<CR><CR>
 " -------
 set laststatus=2
 let g:airline_powerline_fonts=1
-let g:airline_theme="tomorrow"
 
 " --------
 " nerdtree
