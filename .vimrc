@@ -34,9 +34,8 @@ filetype plugin indent on  |" required
 " -------
 " general
 " -------
-" make 'jk' and 'kj' exit insert mode
-inoremap jk <Esc>
-inoremap kj <Esc>
+" make 'jj' exit insert mode
+inoremap jj <Esc>
 
 set autoread  |" changes from outside are reflected
 
