@@ -51,8 +51,7 @@ set backspace=indent,eol,start  |" make backspace behave in a sane manner
 
 set hidden  |" allow hidden buffers, don't limit to 1 file per window/split
 
-set number  |" line numbers
-set relativenumber  |" relative line numbers
+set number  |" show line numbers
 
 autocmd Filetype help nnoremap <buffer> <cr> <c-]>  |" make enter follow tags in help files
 
@@ -155,8 +154,6 @@ let g:pymode_rope_rename_bind='<leader>r'
 let g:pymode_rope_organize_imports_bind='<leader>o'
 let g:pymode_rope_autoimport=0  |" disable auto import in favor of vimpy
 
-let g:pymode_virtualenv=1  |" support virtualenv
-
 " breakpoints plugin
 let g:pymode_breakpoint=0  |" disable breakpoint plugin
 nnoremap <leader>b Oimport ipdb; ipdb.set_trace()<ESC>
@@ -167,4 +164,5 @@ let g:pymode_syntax_all=1
 let g:pymode_syntax_indent_errors=g:pymode_syntax_all
 let g:pymode_syntax_space_errors=g:pymode_syntax_all
 
+let g:pymode_virtualenv=1  |" support virtualenv
 let g:pymode_folding=0  |" don't automatically fold code

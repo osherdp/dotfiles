@@ -1,0 +1,47 @@
+[extensions]
+pager =
+progress =
+color =
+keyword =
+purge =
+record =
+shelve =
+graphlog =
+
+[alias]
+search = log --keyword
+show = log --stat --color=always -vpr
+lg = glog --template 'changeset:   {rev}:{node|short} {tags}\nsummary:     {desc|firstline|fill68|tabindent|tabindent}\nauthor:      {author}\n\n'
+blm = blame -cdqul
+
+[pager]
+pager = LESS='FSRX' less
+attend = annotate, help, diff, log, blame, blm
+
+[diff]
+git = True
+
+[color]
+status.modified = blue bold underline red_background
+status.added = green bold
+status.removed = red bold blue_background
+status.deleted = cyan bold underline
+status.unknown = magenta bold underline
+status.ignored = black bold
+
+status.clean = none
+status.copied = none
+
+qseries.applied = blue bold underline
+qseries.unapplied = black bold
+qseries.missing = red bold
+
+diff.diffline = bold
+diff.extended = cyan bold
+diff.file_a = red bold
+diff.file_b = green bold
+diff.hunk = magenta
+diff.deleted = red
+diff.inserted = green
+diff.changed = white
+diff.trailingwhitespace = bold red_background
