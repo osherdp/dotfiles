@@ -28,9 +28,9 @@ __vcs_name() {
     if [ -d .svn ]; then
         echo "[svn] ";
     elif __has_parent_dir ".git"; then
-        echo "[$(__git_ps1 'git %s')] ";
+        echo "[$(__git_ps1 '%s')] ";
     elif __has_parent_dir ".hg"; then
-        echo "[hg $(hg branch)] ";
+        echo "[$(hg branch)] ";
     else
         echo ""
     fi
@@ -76,3 +76,6 @@ extract () {
         echo "'$1' is not a valid file"
     fi
 }
+
+alias watch="watch --color "
+alias ll="ls -la --color=always"
