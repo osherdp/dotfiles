@@ -5,6 +5,7 @@ yellow=$(tput -Txterm setaf 3)
 dk_blue=$(tput -Txterm setaf 4)
 pink=$(tput -Txterm setaf 5)
 lt_blue=$(tput -Txterm setaf 6)
+white=$(tput -Txterm setaf 7)
 
 bold=$(tput -Txterm bold)
 reset=$(tput -Txterm sgr0)
@@ -54,7 +55,7 @@ __return_code() {
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
-PS1='${debian_chroot:+{$debian_chroot)}$(__return_code)\[$green\]\u@\h \[$pink\]$(__virtual_env)\[$lt_blue\]$(__vcs_name)\[$dk_blue\]\w\[$reset\]\n\$ '
+PS1='\[$bold\]${debian_chroot:+{$debian_chroot)}$(__return_code)\[$green\]\u@\h \[$pink\]$(__virtual_env)\[$lt_blue\]$(__vcs_name)\[$dk_blue\]\w \[$white\]\d \t \[$reset\]\n\$ '
 
 extract () {
     if [ -f "$1" ] ; then

@@ -50,6 +50,6 @@ set shiftwidth=4
 set softtabstop=4
 
 " Imports
-source ~/workspace/dotfiles/vundle.vim
-source ~/workspace/dotfiles/python.vim
-source ~/workspace/dotfiles/appearance.vim
+source ~/code/dotfiles/vundle.vim
+source ~/code/dotfiles/python.vim
+source ~/code/dotfiles/appearance.vim
