@@ -80,3 +80,4 @@ extract () {
 
 alias watch="watch --color "
 alias ll="ls -la --color=always"
+alias ipy="ipython"

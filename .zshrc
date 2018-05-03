@@ -20,3 +20,5 @@ dockerclean() {
     docker rm `docker ps -a -q`
     docker rmi `docker images -q`
 }
+alias bip="printf '\7'"
+alias ipy="ipython"
