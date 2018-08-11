@@ -81,3 +81,5 @@ extract () {
 alias watch="watch --color "
 alias ll="ls -la --color=always"
 alias ipy="ipython"
+alias dif="git diff master...$(git rev-parse --abbrev-ref HEAD)"
+

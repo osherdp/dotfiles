@@ -22,3 +22,7 @@ dockerclean() {
 }
 alias bip="printf '\7'"
 alias ipy="ipython"
+
+function dif() {
+    git diff master...$(git rev-parse --abbrev-ref HEAD)
+}
