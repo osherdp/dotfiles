@@ -43,3 +43,8 @@ let g:syntastic_style_warning_symbol="⚠"
 " -----
 let g:vimpy_prompt_resolve=1  |" when not sure, vimpy asks
 nnoremap <leader>i :VimpyCheckLine<CR>  |" auto import on current line
+
+" ----
+"  YCM
+" ----
+let g:ycm_python_binary_path = 'python'

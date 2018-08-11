@@ -19,6 +19,7 @@ Plugin 'szw/vim-tags'  |" search tool
 
 " python
 Plugin 'klen/python-mode'  |" python
+Plugin 'plytophogy/vim-virtualenv'  |" activating virtualenvs
 "Plugin 'dbsr/vimpy'  |" auto import
 
 " appearance

@@ -1,4 +1,5 @@
 set nocompatible  |" use Vim settings, rather than Vi
+let g:powerline_pycmd="py3"
 
 syntax on  |" syntax highlighting
 filetype plugin on  |" allow nerdcommenter
@@ -42,9 +43,6 @@ let g:ycm_key_list_select_completion=['<C-j>', '<C-n>', '<Down>']
 let g:ycm_key_list_previous_completion=['<C-k>', '<C-p>', '<Up>']
 
 let g:ycm_autoclose_preview_window_after_insertion=1
-
-let g:ycm_key_invoke_completion = ''
-inoremap <Nul> <C-X><C-U>
 
 " Tabs & spaces
 set modeline
